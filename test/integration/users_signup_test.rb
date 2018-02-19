@@ -8,10 +8,10 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
 				name: "",
 				email: "user@invalid",
 				password: "foo",
-				password_confirmation: "bar"}}
+				password_confirmation: "bar"} }
 		end
 		assert_template 'users/new'
-		assert_select 'form[action="/signup"]'
+		assert_select 'form[action="/users"]'
 		assert_select 'div#error_explanation'
 		assert_select 'div.field_with_errors'
 	end
@@ -23,8 +23,7 @@ class UsersSignupTest < ActionDispatch::IntegrationTest
 				name: "Example User",
 				email: "user@example.com",
 				password: "password",
-				password_confirmation: "password"
-				}}
+				password_confirmation: "password" } }
 		end
 		follow_redirect!
 		assert_template 'users/show'
