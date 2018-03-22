@@ -66,7 +66,7 @@ end
 
 group :production do 
   # Use postgresql as the database for Active Record
-  gem 'pg', '0.18.4'
+  gem 'pg', '0.20.0'
   gem 'fog', '1.42'
 end
 
