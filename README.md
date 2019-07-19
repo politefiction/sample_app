@@ -39,3 +39,6 @@ $ rails server
 
 For more information, see the
 [*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
+
+NOTE:
+This app still uses Ruby Sass, which has reached end-of-life; may eventually update to Dart Sass or another Sass plugin.
